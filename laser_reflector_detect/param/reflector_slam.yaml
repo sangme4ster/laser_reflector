@@ -1,0 +1,16 @@
+# Reflector SLAM 建图参数
+min_reflector_intensity: 3500.0  # 反光柱最小强度阈值
+reflector_radius: 0.03  # 反光柱半径(m)
+min_reflector_sample_count: 3  # 构成反光柱的最少点数
+
+# ICP激光里程计参数
+icp_max_iterations: 50  # ICP最大迭代次数
+icp_convergence_threshold: 0.001  # ICP收敛阈值
+
+# 地图参数
+map_frame_distance_threshold: 0.2  # 地图中反光柱合并距离阈值(m)
+map_save_path: "/home/cat/igk_ws/src/core/laser_reflector_detect/src/reflectormap.csv"
+
+# TF坐标系
+lidar_frame: "laser"  # 激光雷达坐标系
+base_frame: "base_link"  # 机器人基座坐标系

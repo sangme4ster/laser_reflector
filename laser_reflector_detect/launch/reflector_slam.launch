@@ -1,0 +1,8 @@
+<launch>
+    <!--
+        Reflector SLAM Node - 建图程序
+        用于在不使用cartographer的情况下建立反光柱地图
+    -->
+    <rosparam command="load" file="$(find laser_reflector_detect)/param/reflector_slam.yaml" />
+    <node pkg="laser_reflector_detect" type="reflector_slam_node" name="reflector_slam_node" output="screen" />
+</launch>

@@ -1,0 +1,16 @@
+# Reflector Localization 定位参数
+min_reflector_intensity: 3500.0  # 反光柱最小强度阈值
+reflector_radius: 0.03  # 反光柱半径(m)
+min_reflector_sample_count: 3  # 构成反光柱的最少点数
+
+# 匹配参数
+match_distance_threshold: 0.2  # 反光柱匹配距离阈值(m)
+min_match_count: 3  # 最小匹配反光柱数量
+
+# 地图参数
+map_file_path: "/home/cat/igk_ws/src/core/laser_reflector_detect/src/reflectormap.csv"
+
+# TF坐标系
+map_frame: "map"  # 地图坐标系
+lidar_frame: "laser"  # 激光雷达坐标系
+base_frame: "base_link"  # 机器人基座坐标系

@@ -1,0 +1,18 @@
+min_reflector_intensity: 3500  # 反光柱反射强度
+min_reflector_sample_count: 3  #构成反光柱的点数
+reflector_radius: 0.03  #反光柱半径
+kLandmarkMarkerScale: 0.1  #rviz显示比例
+lidar_frame: "laser"  # 激光的frame_id
+map_frame: "map"  #地图的frame_id
+match_distance_accepted: 0.2   #检测反光柱是否是同一个的允许误差
+# 2-two reflector 
+# 1-one reflector(just for find reflector x y)
+reflector_combination_mode: 1
+#angle_error_scale : 15 #角度误差
+#distance_error_scale : 15 #距离误差
+reflector_combined_length: 1  #反光柱组合的使用方法
+
+work_mode: 3
+#1 slam
+#2 navigation
+

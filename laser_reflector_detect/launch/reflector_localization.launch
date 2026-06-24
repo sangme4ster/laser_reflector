@@ -1,0 +1,8 @@
+<launch>
+    <!--
+        Reflector Localization Node - 定位程序
+        用于在不使用cartographer的情况下基于已知地图进行定位
+    -->
+    <rosparam command="load" file="$(find laser_reflector_detect)/param/reflector_localization.yaml" />
+    <node pkg="laser_reflector_detect" type="reflector_localization_node" name="reflector_localization_node" output="screen" />
+</launch>
